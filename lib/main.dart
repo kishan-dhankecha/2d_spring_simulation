@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'presentation/home.screen.dart';
 
-void main() {
+Future<void> main()async  {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Future.delayed(const Duration(milliseconds: 300));
   runApp(const MyApp());
 }
 
